@@ -459,9 +459,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1382967312}
   - component: {fileID: 1382967311}
+  - component: {fileID: 1382967314}
+  - component: {fileID: 1382967313}
+  - component: {fileID: 1382967315}
   m_Layer: 0
-  m_Name: player
-  m_TagString: Untagged
+  m_Name: player2
+  m_TagString: player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -527,8 +530,80 @@ Transform:
   m_LocalScale: {x: 0.1454905, y: 0.1454905, z: 0.1454905}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1382967313
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382967310}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &1382967314
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382967310}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.15, y: 4.16}
+    newSize: {x: 4.15, y: 4.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.15, y: 4.16}
+  m_EdgeRadius: 0
+--- !u!114 &1382967315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382967310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f11499a160e4faf8e0f8f281027991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB0: {fileID: 4002378628036588068, guid: 4b3471d0ae9ef4b14859630e01968be4, type: 3}
+  RB1: {fileID: 8546398307401287090, guid: 3cf4a9dc1d4db4879a1424091bbf6e21, type: 3}
+  RB2: {fileID: 2334286616124063480, guid: cf7a8556c880046da8b755c9591957bb, type: 3}
+  RB3: {fileID: 251811192701368955, guid: 68a43a734aca042549083d47109f5827, type: 3}
+  RB4: {fileID: 3827174503453121933, guid: 95e3b4ec0ec884508a88af83bbf7258c, type: 3}
+  BigBarrier: {fileID: 1043634639563925338, guid: 0690db0a6992241b8ab4441a24084aa0,
+    type: 3}
+  KBarrier0: {fileID: 7433571289609211641, guid: c4ed9fef2130f4d6b94a9f949f5c00b3,
+    type: 3}
+  KBarrier1: {fileID: 1697572306410452319, guid: 8766a4083fa8d40ea8d7f7a6f9161175,
+    type: 3}
+  KBarrier2: {fileID: 6939408234823989883, guid: b0b06c8b07fe742378c399dd88967dcb,
+    type: 3}
 --- !u!1 &1470063225
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,7 +795,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2102578957}
-  - component: {fileID: 2102578956}
   m_Layer: 0
   m_Name: MasterController
   m_TagString: Untagged
@@ -728,18 +802,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2102578956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2102578955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05fcefcbd33d840798cacbaa02743f82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2102578957
 Transform:
   m_ObjectHideFlags: 0
@@ -764,9 +826,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2139419492}
   - component: {fileID: 2139419491}
+  - component: {fileID: 2139419494}
+  - component: {fileID: 2139419493}
+  - component: {fileID: 2139419495}
   m_Layer: 0
-  m_Name: player2
-  m_TagString: Untagged
+  m_Name: player
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -828,9 +893,75 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139419490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.223, y: -0.013, z: 0}
+  m_LocalPosition: {x: -5.223, y: -0.013, z: -2}
   m_LocalScale: {x: 0.1372737, y: 0.1372737, z: 0.1372737}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &2139419493
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139419490}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &2139419494
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139419490}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.15, y: 4.16}
+    newSize: {x: 4.15, y: 4.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.15, y: 4.16}
+  m_EdgeRadius: 0
+--- !u!114 &2139419495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139419490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9e1608f3e05d4ed68ac46867bccaa47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigBullet: {fileID: 7738783375937044600, guid: d1ae243e3b9f74212960be0777c5d521,
+    type: 3}
+  CenterBullet: {fileID: 0}
+  Downbullet: {fileID: 0}
+  AutoBullet: {fileID: 1294545855326999895, guid: 91e1daac9799242979f597afa7194f07,
+    type: 3}
+  Upbullet: {fileID: 0}
