@@ -22,7 +22,7 @@ public class BigBarrierCOntroller : MonoBehaviour
     {
         if(coll.gameObject.tag == "Renia"){
             
-            HP = HP - 1;
+            HP = HP - 2;
             if(HP < 1){
                 Destroy(this.gameObject);
             }

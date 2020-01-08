@@ -21,10 +21,10 @@ public class ReniaBarrierController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D coll)
     {
         if(coll.gameObject.tag == "Renia"){
-            HP = HP - 1;
-            if(HP < 1){
-                Destroy(this.gameObject);
-            }
+            
+            Destroy(coll.gameObject);
+            Destroy(this.gameObject);
+            
         }
 
         

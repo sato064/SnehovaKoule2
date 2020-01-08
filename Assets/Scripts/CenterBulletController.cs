@@ -1,35 +1,41 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
+
 using UnityEngine;
 
-
-
-public class ReniaBulletController : MonoBehaviour
+public class CenterBulletController : MonoBehaviour
 {
     public static float iryoku;
+
     void Start(){
-        iryoku = 2.0f;
+        iryoku = 3.0f;
     }
 
 
     void Update()
     {
-        transform.Translate(0.2f, 0, 0);
+     
+    transform.Translate(0.1f, 0, 0);
 
-        if (transform.position.x > 10)
+    if (transform.position.x > 10)
         {
             Destroy(gameObject);
         }
 
 
-    }
+        
+
     
+
+    }
     void OnTriggerEnter2D(Collider2D coll)
     {
         if(coll.gameObject.tag == "Renia"){
             //Debug.Log("HITREINA");
-            
-            //Destroy(coll.gameObject);
-            
+            iryoku = iryoku - 2;
+            if(iryoku < 1){
+                Destroy(this.gameObject);
+            }
         }
         if (coll.gameObject.tag == "player2")
         {   Destroy(this.gameObject);
@@ -52,8 +58,5 @@ public class ReniaBulletController : MonoBehaviour
 
         
         }
-
-            
-
-        }
     }
+}

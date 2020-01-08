@@ -22,14 +22,17 @@ public class Player2Controller : MonoBehaviour
 
     private bool flg;
 
+    private int Boll;
+
 
 
     void Start()
     {
         //HpBarCtrl.DownHp(20);
-        //HP = HPstore.getHP1();
+        HP = HpControllerMaster.getHP1();
         flg = true;
         bar = MasterController.getBarrier();
+        Boll = MasterController.getKyushu();
     }
 
     void Update()
@@ -75,21 +78,38 @@ public class Player2Controller : MonoBehaviour
 
     
     void OnTriggerEnter2D(Collider2D coll){
+
         if(coll.gameObject.tag == "Renia"){
+            Debug.Log("ATARI");
             HP = HP - 2;
-            //HPstore.ChangeHP2(2);
+            HpControllerMaster.ChangeHP2(2);
        
 
         }
+
         if(coll.gameObject.tag == "Big"){
             //HP = HP - BulletController1.BIGiryoku;
-            //HPstore.ChangeHP2(MBulletController1.BIGiryoku);
+            if(bar == 1){
+                HpControllerMaster.ChangeHP2(2);
        
+            }
+            if(bar == 2){
+                HpControllerMaster.ChangeHP2(3);
+       
+            }
+            if(bar == 3){
+                HpControllerMaster.ChangeHP2(5);
+       
+            }
+            if(bar == 0 ){
+                HpControllerMaster.ChangeHP2(8);
+            }
         }
+
         if(coll.gameObject.tag == "All"){
             //Debug.Log(PBulletControllerR.iryoku);
             //HP = HP - UpperBulletController.iryoku;
-            //HPstore.ChangeHP2(UpperBulletController.iryoku);
+            HpControllerMaster.ChangeHP2(UpperBulletController.iryoku);
     
 
         }
