@@ -41,8 +41,8 @@ public class Player1Controller : MonoBehaviour
             if(Boll == 1 && bflag)
             {
                 Instantiate(BigBullet, transform.position, Quaternion.identity);
-                //YPstore.LoseYP1(6);
-                //Debug.Log("YP :" + YPstore.getYP1());
+                YpControllerMaster.ChangeYP1(6);
+                //Debug.Log("YP :" + YpControllerMaster.getYP1());
                 bflag = false;
                 return;
             }
@@ -50,7 +50,7 @@ public class Player1Controller : MonoBehaviour
             {
                 
                 StartCoroutine("Auto");
-                //YPstore.LoseYP1(4);
+                YpControllerMaster.ChangeYP1(4);
                 Debug.Log("weiwei");
                 bflag = false;
                 return;
@@ -62,7 +62,7 @@ public class Player1Controller : MonoBehaviour
                 Instantiate(CenterBullet, transform.position, Quaternion.identity);
                 Instantiate(Downbullet,transform.position, Quaternion.identity);
                 Instantiate(Upbullet,transform.position, Quaternion.identity);
-                //YPstore.LoseYP1(6);
+                YpControllerMaster.ChangeYP1(6);
 
                 bflag = false;
                 return;

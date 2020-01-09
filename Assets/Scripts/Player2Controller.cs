@@ -41,7 +41,7 @@ public class Player2Controller : MonoBehaviour
         if(bar == 1 && flg){
                 Debug.Log("kkits");
                 Instantiate(BigBarrier);
-                //YPstore.LoseYP2(5);
+                YpControllerMaster.ChangeYP2(5);
                 flg = false;
                 return;
 
@@ -53,7 +53,7 @@ public class Player2Controller : MonoBehaviour
                 Instantiate(RB2);
                 Instantiate(RB3);
                 Instantiate(RB4);
-                //YPstore.LoseYP2(4);
+                YpControllerMaster.ChangeYP2(4);
 
                 flg = false;
                 return;
@@ -65,7 +65,7 @@ public class Player2Controller : MonoBehaviour
                 Instantiate(KBarrier0);
                 Instantiate(KBarrier1);
                 Instantiate(KBarrier2);
-                //YPstore.LoseYP2(5);
+                YpControllerMaster.ChangeYP2(5);
                 flg = false;
                 return;
             }

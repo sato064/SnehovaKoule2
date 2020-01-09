@@ -13,7 +13,6 @@ public class BigBulletController : MonoBehaviour
         iryoku = 8.0f;
     }
 
-
     void Update()
     {
         transform.Translate(0.1f, 0, 0);
