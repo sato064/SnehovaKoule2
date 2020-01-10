@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1294545855326999888}
   - component: {fileID: 1294545855326999889}
   - component: {fileID: 1294545855326999894}
-  - component: {fileID: 2357760336471965068}
+  - component: {fileID: -5378658938755386301}
   m_Layer: 0
-  m_Name: ReniaBullet
+  m_Name: ReniaBullet 1
   m_TagString: Renia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,7 +128,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2357760336471965068
+--- !u!114 &-5378658938755386301
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,6 +137,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1294545855326999895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cc3d8a87754d4b44a9815dac631b060, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d54d279be4ca457fbfa12d2973ffff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

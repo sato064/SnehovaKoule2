@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4329441871818982729}
   - component: {fileID: 4304556689759096767}
   - component: {fileID: 6997193461909159802}
-  - component: {fileID: -7391496974565345036}
+  - component: {fileID: -1225873686892582814}
   m_Layer: 0
-  m_Name: CenterBullet
+  m_Name: CenterBullet 1
   m_TagString: All
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,7 +106,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-7391496974565345036
+--- !u!114 &-1225873686892582814
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,6 +115,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4016914616816087809}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c23e0dc1c0de24a64919376f637767b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 89887dd1e311d49dc9ea496b54f67246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

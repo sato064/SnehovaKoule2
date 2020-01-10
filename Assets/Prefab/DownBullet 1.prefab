@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6976283003326275054}
   - component: {fileID: 5229663396906159067}
   - component: {fileID: -5772750599069794701}
-  - component: {fileID: -7476479081702106791}
+  - component: {fileID: 8575060404275002256}
   m_Layer: 0
-  m_Name: DownBullet
+  m_Name: DownBullet 1
   m_TagString: All
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,7 +106,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-7476479081702106791
+--- !u!114 &8575060404275002256
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,6 +115,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6151672208158330662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06aeed875063a406389917f477630a8e, type: 3}
+  m_Script: {fileID: 11500000, guid: 99eb20c6b357249fbad2ea559e1682bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -11,6 +11,9 @@ public class MasterController : MonoBehaviour
 
     void Start()
     {
+        kyushu = 0;
+        barrier = 0;
+        
         //YPstore.AddYP1(2);
         //YPstore.AddYP2(2);
         

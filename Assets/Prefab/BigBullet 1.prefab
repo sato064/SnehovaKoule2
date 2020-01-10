@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7738783375937044602}
   - component: {fileID: 7738783375937044598}
   - component: {fileID: 7738783375937044599}
-  - component: {fileID: 7738783375937044603}
+  - component: {fileID: 6970595046217780305}
   m_Layer: 0
-  m_Name: BigBullet
+  m_Name: BigBullet 1
   m_TagString: Big
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,7 +128,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.99999994, y: 0.99999994}
   m_EdgeRadius: 0
---- !u!114 &7738783375937044603
+--- !u!114 &6970595046217780305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,6 +137,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7738783375937044600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 268e26f8dc7674fbd99401d31976a614, type: 3}
+  m_Script: {fileID: 11500000, guid: ba145f1fd4be34616b7c586b4fbe36fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

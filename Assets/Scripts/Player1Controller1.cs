@@ -31,8 +31,8 @@ public class Player1Controller1 : MonoBehaviour
         //HpBarCtrl.DownHp(20);
         HP = HpControllerMaster.getHP1();
         flg = true;
-        bar = MasterController.getBarrier();
-        Boll = MasterController.getKyushu();
+        bar = MasterController2.getBarrier();
+        Boll = MasterController2.getKyushu();
     }
 
     void Update()
@@ -41,7 +41,7 @@ public class Player1Controller1 : MonoBehaviour
         if(bar == 1 && flg){
                 Debug.Log("kkits");
                 Instantiate(BigBarrier);
-                YpControllerMaster.ChangeYP2(5);
+                YpControllerMaster.ChangeYP1(5);
                 flg = false;
                 return;
 
@@ -53,7 +53,7 @@ public class Player1Controller1 : MonoBehaviour
                 Instantiate(RB2);
                 Instantiate(RB3);
                 Instantiate(RB4);
-                YpControllerMaster.ChangeYP2(4);
+                YpControllerMaster.ChangeYP1(4);
 
                 flg = false;
                 return;
@@ -65,7 +65,7 @@ public class Player1Controller1 : MonoBehaviour
                 Instantiate(KBarrier0);
                 Instantiate(KBarrier1);
                 Instantiate(KBarrier2);
-                YpControllerMaster.ChangeYP2(5);
+                YpControllerMaster.ChangeYP1(5);
                 flg = false;
                 return;
             }
@@ -82,7 +82,7 @@ public class Player1Controller1 : MonoBehaviour
         if(coll.gameObject.tag == "Renia"){
             Debug.Log("ATARI");
             HP = HP - 2;
-            HpControllerMaster.ChangeHP2(2);
+            HpControllerMaster.ChangeHP1(2);
        
 
         }
@@ -90,26 +90,26 @@ public class Player1Controller1 : MonoBehaviour
         if(coll.gameObject.tag == "Big"){
             //HP = HP - BulletController1.BIGiryoku;
             if(bar == 1){
-                HpControllerMaster.ChangeHP2(2);
+                HpControllerMaster.ChangeHP1(2);
        
             }
             if(bar == 2){
-                HpControllerMaster.ChangeHP2(3);
+                HpControllerMaster.ChangeHP1(3);
        
             }
             if(bar == 3){
-                HpControllerMaster.ChangeHP2(5);
+                HpControllerMaster.ChangeHP1(5);
        
             }
             if(bar == 0 ){
-                HpControllerMaster.ChangeHP2(8);
+                HpControllerMaster.ChangeHP1(8);
             }
         }
 
         if(coll.gameObject.tag == "All"){
             //Debug.Log(PBulletControllerR.iryoku);
             //HP = HP - UpperBulletController.iryoku;
-            HpControllerMaster.ChangeHP2(UpperBulletController.iryoku);
+            HpControllerMaster.ChangeHP1(UpperBulletController.iryoku);
     
 
         }

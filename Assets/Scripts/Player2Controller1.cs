@@ -23,7 +23,7 @@ public class Player2Controller1 : MonoBehaviour
 
     void Start()
     {
-        Boll = MasterController.getKyushu();
+        Boll = MasterController2.getKyushu();
         bflag = true;
     }
 
@@ -41,8 +41,8 @@ public class Player2Controller1 : MonoBehaviour
             if(Boll == 1 && bflag)
             {
                 Instantiate(BigBullet, transform.position, Quaternion.identity);
-                YpControllerMaster.ChangeYP1(6);
-                //Debug.Log("YP :" + YpControllerMaster.getYP1());
+                YpControllerMaster.ChangeYP2(6);
+                //Debug.Log("YP :" + YpControllerMaster.getYP2());
                 bflag = false;
                 return;
             }
@@ -50,7 +50,7 @@ public class Player2Controller1 : MonoBehaviour
             {
                 
                 StartCoroutine("Auto");
-                YpControllerMaster.ChangeYP1(4);
+                YpControllerMaster.ChangeYP2(4);
                 Debug.Log("weiwei");
                 bflag = false;
                 return;
@@ -62,7 +62,7 @@ public class Player2Controller1 : MonoBehaviour
                 Instantiate(CenterBullet, transform.position, Quaternion.identity);
                 Instantiate(Downbullet,transform.position, Quaternion.identity);
                 Instantiate(Upbullet,transform.position, Quaternion.identity);
-                YpControllerMaster.ChangeYP1(6);
+                YpControllerMaster.ChangeYP2(6);
 
                 bflag = false;
                 return;

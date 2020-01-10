@@ -450,7 +450,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 370653553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21a47b2ba1aae4e79a78b979ccfe92f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f7bc3e8267714cb7a8f694ed6e8c09f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &370653556
@@ -1345,7 +1345,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1270697078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1907330ac09184dc090d67c34158bb77, type: 3}
+  m_Script: {fileID: 11500000, guid: 904f4e366bf944b308954ec39dc1f102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1345645309
@@ -1563,11 +1563,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdc474794964b4b0a8de73dbcd72eff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BigBullet: {fileID: 0}
-  CenterBullet: {fileID: 0}
-  Downbullet: {fileID: 0}
-  AutoBullet: {fileID: 0}
-  Upbullet: {fileID: 0}
+  BigBullet: {fileID: 7738783375937044600, guid: a03f2c6f9e23f4b5ab5c9d2c68e93717,
+    type: 3}
+  CenterBullet: {fileID: 4016914616816087809, guid: 85c0a218900be42b7955bc6431155d09,
+    type: 3}
+  Downbullet: {fileID: 6151672208158330662, guid: e28b77a92293a44aba2ebb323f9e17cb,
+    type: 3}
+  AutoBullet: {fileID: 1294545855326999895, guid: 45930b91c563d4858b3216ee52832ae0,
+    type: 3}
+  Upbullet: {fileID: 2527433836943458512, guid: cfbc541f50fde459c95ee0f2fcfd110d,
+    type: 3}
 --- !u!1 &1470063225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2353,12 +2358,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561796d4ab02490f9ed69fdd379f4e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RB0: {fileID: 0}
-  RB1: {fileID: 0}
-  RB2: {fileID: 0}
-  RB3: {fileID: 0}
-  RB4: {fileID: 0}
-  BigBarrier: {fileID: 0}
-  KBarrier0: {fileID: 0}
-  KBarrier1: {fileID: 0}
-  KBarrier2: {fileID: 0}
+  RB0: {fileID: 4002378628036588068, guid: 1a24c5aee6625477b81ccfca7f567d36, type: 3}
+  RB1: {fileID: 8546398307401287090, guid: 98a9835880de6448bbf67fd04f42f754, type: 3}
+  RB2: {fileID: 2334286616124063480, guid: 29d3dd622cafa4a30a30afe361d2e2e7, type: 3}
+  RB3: {fileID: 3827174503453121933, guid: 8ebe0435d16884a72a996caf31aea4a0, type: 3}
+  RB4: {fileID: 251811192701368955, guid: 371482d34e6bd4c5f83a6e95f678895b, type: 3}
+  BigBarrier: {fileID: 1043634639563925338, guid: 62326fe9dc4244f958e4f58f199560db,
+    type: 3}
+  KBarrier0: {fileID: 7433571289609211641, guid: 1c2317e3f07e643fb9274a566dc4785a,
+    type: 3}
+  KBarrier1: {fileID: 6939408234823989883, guid: 540231f41c4de49d8b840d4daa4c8319,
+    type: 3}
+  KBarrier2: {fileID: 1697572306410452319, guid: 0de53dca397eb426197650da7a735d02,
+    type: 3}

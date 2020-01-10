@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7293235631451753628}
   - component: {fileID: 669971614666582064}
   - component: {fileID: -2752766119461301016}
-  - component: {fileID: -6457114031514710343}
+  - component: {fileID: -201287143926093074}
   m_Layer: 0
-  m_Name: 'UpperBullet '
+  m_Name: UpperBullet 1
   m_TagString: All
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,7 +106,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-6457114031514710343
+--- !u!114 &-201287143926093074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,6 +115,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2527433836943458512}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa757483424a74521acef24c9aa10370, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b58fb96f51bf4bde8faf1d6300e53ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
