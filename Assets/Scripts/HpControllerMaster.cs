@@ -7,10 +7,13 @@ public class HpControllerMaster : MonoBehaviour
     private static float HP1p;
     private static float HP2p;
     // Start is called before the first frame update
+    private static int cpuf;
     void Start()
     {
+        Time.timeScale = 1.0f;
         HP1p = 20f;
         HP2p = 20f;
+        Application.targetFrameRate = 40;
         
     }
 

@@ -15,6 +15,8 @@ public class Player2Controller : MonoBehaviour
     public GameObject KBarrier0;
     public GameObject KBarrier1;
     public GameObject KBarrier2;
+    public GameObject Explo;
+
 
     public static float HP;
     
@@ -33,6 +35,7 @@ public class Player2Controller : MonoBehaviour
         flg = true;
         bar = MasterController.getBarrier();
         Boll = MasterController.getKyushu();
+
     }
 
     void Update()
@@ -89,6 +92,8 @@ public class Player2Controller : MonoBehaviour
 
         if(coll.gameObject.tag == "Big"){
             //HP = HP - BulletController1.BIGiryoku;
+            Instantiate(Explo, transform.position, Quaternion.identity);
+            
             if(bar == 1){
                 HpControllerMaster.ChangeHP2(2);
        

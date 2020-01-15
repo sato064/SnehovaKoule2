@@ -12,8 +12,8 @@ public class YpControllerMaster : MonoBehaviour
         // Start is called before the first frame update
     void Start()
     {
-        YP1p = 25;
-        YP2p = 25;
+        YP1p = 23;
+        YP2p = 23;
 
     }
 
