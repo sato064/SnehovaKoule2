@@ -74,6 +74,10 @@ public class MasterController : MonoBehaviour
                 barrier = c_b;
             }
 
+            flg2 = 1;
+            dimimg2();
+
+
 
         }
 

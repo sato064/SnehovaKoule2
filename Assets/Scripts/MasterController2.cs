@@ -42,11 +42,11 @@ public class MasterController2 : MonoBehaviour
         Debug.Log(cpu_ctrl.Getcflg());
         if (cpu_ctrl.Getcflg() == 1)
         {
-            if (YpControllerMaster.getYP1() >= 6)
+            if (YpControllerMaster.getYP2() >= 6)
             {
                 kyushu = c_b;
             }
-            else if (YpControllerMaster.getYP1() >= 4 && c_b == 2)
+            else if (YpControllerMaster.getYP2() >= 4 && c_b == 2)
             {
                 kyushu = c_b;
             }
