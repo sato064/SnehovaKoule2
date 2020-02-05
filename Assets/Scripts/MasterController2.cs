@@ -10,6 +10,9 @@ public class MasterController2 : MonoBehaviour
 
     private static int barrier = 0;
 
+    public AudioClip sound1;
+    public AudioSource audioSource;
+
     private float yp1;
     private float yp2;
 
@@ -20,6 +23,21 @@ public class MasterController2 : MonoBehaviour
     private bool isShift;
 
     private bool isShift2;
+
+    public GameObject img1;
+
+    public GameObject img2;
+
+    public GameObject img3;
+
+    public GameObject img4;
+    public GameObject img5;
+
+    public GameObject img6;
+
+    public GameObject img7;
+
+    public GameObject img8;
 
 
     void Start()
@@ -65,6 +83,42 @@ public class MasterController2 : MonoBehaviour
     {
         return barrier;
     }
+    public void dimimg()
+    {
+        img1.SetActive(false);
+        img2.SetActive(false);
+        img3.SetActive(false);
+        img4.SetActive(false);
+
+
+    }
+    public void dimimg2()
+    {
+        img5.SetActive(false);
+        img6.SetActive(false);
+        img7.SetActive(false);
+        img8.SetActive(false);
+
+
+    }
+    public void aprimg()
+    {
+        img1.SetActive(true);
+        img2.SetActive(true);
+        img3.SetActive(true);
+        img4.SetActive(true);
+
+
+    }
+    public void aprimg2()
+    {
+        img5.SetActive(true);
+        img6.SetActive(true);
+        img7.SetActive(true);
+        img8.SetActive(true);
+
+
+    }
 
     void Update()
     {
@@ -85,6 +139,9 @@ public class MasterController2 : MonoBehaviour
                     {
                         barrier = 1;
                         flg1 = 1;
+                        //audioSource.Play();
+                        audioSource.PlayOneShot(sound1);
+                        dimimg();
 
                     }
                 }
@@ -94,6 +151,8 @@ public class MasterController2 : MonoBehaviour
                     {
                         barrier = 2;
                         flg1 = 1;
+                        audioSource.PlayOneShot(sound1);
+                        dimimg();
 
                     }
                 }
@@ -103,6 +162,8 @@ public class MasterController2 : MonoBehaviour
                     {
                         barrier = 3;
                         flg1 = 1;
+                        audioSource.PlayOneShot(sound1);
+                        dimimg();
 
                     }
                 }
@@ -111,22 +172,24 @@ public class MasterController2 : MonoBehaviour
 
                     barrier = 0;
                     flg1 = 1;
+                    audioSource.PlayOneShot(sound1);
+                    dimimg();
+
 
                 }
 
-
             }
-
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-
-                barrier = 0;
-                flg1 = 0;
-
-            }
-
-
         }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+
+            //Debug.Log("Q");
+
+            barrier = 0;
+            flg1 = 0;
+            aprimg();
+        }
+
         if (flg2 == 0)
         {
 
@@ -134,6 +197,7 @@ public class MasterController2 : MonoBehaviour
 
             if (isShift2)
             {
+
                 if (Input.GetKeyDown(KeyCode.I))
                 {
                     if (yp2 >= 5)
@@ -141,9 +205,11 @@ public class MasterController2 : MonoBehaviour
 
                         kyushu = 1;
                         flg2 = 1;
+                        dimimg2();
 
                     }
                 }
+
                 if (Input.GetKeyDown(KeyCode.O))
                 {
                     if (yp2 >= 4)
@@ -151,6 +217,9 @@ public class MasterController2 : MonoBehaviour
 
                         kyushu = 2;
                         flg2 = 1;
+                        audioSource.PlayOneShot(sound1);
+                        dimimg2();
+
                     }
 
                 }
@@ -161,6 +230,8 @@ public class MasterController2 : MonoBehaviour
 
                         kyushu = 3;
                         flg2 = 1;
+                        audioSource.PlayOneShot(sound1);
+                        dimimg2();
                     }
 
 
@@ -168,20 +239,16 @@ public class MasterController2 : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.U))
                 {
 
-                    //Debug.Log("Q");
-
                     kyushu = 0;
-                    flg2 = 1;
+                    flg1 = 1;
+                    audioSource.PlayOneShot(sound1);
+                    dimimg2();
+
+
                 }
             }
-            if (Input.GetKeyDown(KeyCode.K))
-            {
 
-                //Debug.Log("Q");
 
-                kyushu = 0;
-                flg2 = 0;
-            }
 
         }
         if ((flg1 == 1) && (flg2 == 1))

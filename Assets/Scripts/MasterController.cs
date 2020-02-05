@@ -195,6 +195,7 @@ public class MasterController : MonoBehaviour
             kyushu = 0;
             flg1 = 0;
             aprimg();
+            audioSource.PlayOneShot(sound1);
         }
 
         if (flg2 == 0)
@@ -212,6 +213,7 @@ public class MasterController : MonoBehaviour
 
                         barrier = 1;
                         flg2 = 1;
+                        audioSource.PlayOneShot(sound1);
                         dimimg2();
 
                     }
@@ -224,6 +226,7 @@ public class MasterController : MonoBehaviour
 
                         barrier = 2;
                         flg2 = 1;
+                        audioSource.PlayOneShot(sound1);
                         dimimg2();
 
                     }
@@ -236,6 +239,7 @@ public class MasterController : MonoBehaviour
 
                         barrier = 3;
                         flg2 = 1;
+                        audioSource.PlayOneShot(sound1);
                         dimimg2();
                     }
 
@@ -264,9 +268,11 @@ public class MasterController : MonoBehaviour
             barrier = 0;
             flg2 = 0;
             aprimg2();
+            audioSource.PlayOneShot(sound1);
         }
         if ((flg1 == 1) && (flg2 == 1))
         {
+            Debug.Log("imakara");
             SceneManager.LoadScene("Calculation1");
 
 

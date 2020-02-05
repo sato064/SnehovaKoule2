@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BigBarrierCOntroller : MonoBehaviour
 {
+    public GameObject hit;
     private float HP; 
     // Start is called before the first frame update
     void Start()
@@ -20,11 +21,13 @@ public class BigBarrierCOntroller : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D coll)
     {
+        Instantiate(hit, transform.position, Quaternion.identity);
         if(coll.gameObject.tag == "Renia"){
             
             HP = HP - 2;
             if(HP < 1){
                 Destroy(this.gameObject);
+                
             }
         }
 
@@ -34,6 +37,7 @@ public class BigBarrierCOntroller : MonoBehaviour
             HP = HP - 3;
             if(HP <= 1){
                 Destroy(this.gameObject);
+                Instantiate(hit);
             }
 
         
@@ -44,6 +48,7 @@ public class BigBarrierCOntroller : MonoBehaviour
             HP = HP - 6;
             if(HP <= 1){
                 Destroy(this.gameObject);
+                Instantiate(hit);
             }
 
         
