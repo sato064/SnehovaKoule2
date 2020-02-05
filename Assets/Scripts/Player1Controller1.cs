@@ -24,6 +24,8 @@ public class Player1Controller1 : MonoBehaviour
 
     private int Boll;
 
+    public GameObject Explo;
+
 
 
     void Start()
@@ -89,6 +91,7 @@ public class Player1Controller1 : MonoBehaviour
 
         if(coll.gameObject.tag == "Big"){
             //HP = HP - BulletController1.BIGiryoku;
+            Instantiate(Explo, transform.position, Quaternion.identity);
             if(bar == 1){
                 HpControllerMaster.ChangeHP1(2);
        

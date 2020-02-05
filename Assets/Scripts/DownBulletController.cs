@@ -20,7 +20,7 @@ public class DownBulletController : MonoBehaviour
         }
 
         if(transform.position.x < -2){
-            transform.Translate(0.1f, -0.2168f, 0);
+            transform.Translate(0.1f, -0.1768f, 0);
         }
 
         if (transform.position.x > 10)

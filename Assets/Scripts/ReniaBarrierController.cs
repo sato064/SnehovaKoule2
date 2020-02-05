@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ReniaBarrierController : MonoBehaviour
 {
-    private float HP; 
+    private float HP;
+
+    public GameObject hit;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class ReniaBarrierController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D coll)
     {
+        Instantiate(hit, transform.position, Quaternion.identity);
         if(coll.gameObject.tag == "Renia"){
             
             Destroy(coll.gameObject);

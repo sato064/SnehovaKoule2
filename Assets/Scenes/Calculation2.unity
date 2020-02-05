@@ -1670,7 +1670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382967310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.6, y: 0.033, z: -1}
+  m_LocalPosition: {x: 7.5, y: 0.033, z: -1}
   m_LocalScale: {x: 0.33, y: 0.33, z: 0.1454905}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2897,7 +2897,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139419490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.6, y: 0, z: -2}
+  m_LocalPosition: {x: -7.5, y: 0, z: -2}
   m_LocalScale: {x: 0.33, y: 0.33, z: 0.1372737}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2975,3 +2975,4 @@ MonoBehaviour:
     type: 3}
   KBarrier2: {fileID: 1697572306410452319, guid: 0de53dca397eb426197650da7a735d02,
     type: 3}
+  Explo: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
