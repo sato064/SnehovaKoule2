@@ -63,9 +63,9 @@ public class MasterController : MonoBehaviour
         {
             YpControllerMaster.PlusYP2(2);
         }
-        else if (YpControllerMaster.getYP1() == 24)
+        else if (YpControllerMaster.getYP2() == 24)
         {
-            YpControllerMaster.PlusYP1(1);
+            YpControllerMaster.PlusYP2(1);
         }
 
         int c_b = Random.Range(1, 4);
