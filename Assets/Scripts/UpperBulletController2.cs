@@ -16,10 +16,20 @@ public class UpperBulletController2 : MonoBehaviour
     {
         if(transform.position.x < 2){
             
-            transform.Translate(-0.1f, -0.1f, 0);
+            //transform.Translate(-0.1f, -0.1f, 0);
+            transform.Translate(-0.1f, -0.025f, 0);
+            Vector3 m_scale = transform.localScale;
+            m_scale.x += 0.0023f;
+            m_scale.y += 0.0023f;
+            transform.localScale = m_scale;
         }
         if(transform.position.x > 2){
-            transform.Translate(-0.1f, 0.1768f, 0);
+            //transform.Translate(-0.1f, 0.1768f, 0);
+            transform.Translate(-0.1f, 0.0442f, 0);
+            Vector3 m_scale = transform.localScale;
+            m_scale.x -= 0.005f;
+            m_scale.y -= 0.005f;
+            transform.localScale = m_scale;
         }
 
         if (transform.position.x > 10)

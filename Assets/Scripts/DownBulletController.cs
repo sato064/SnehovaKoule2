@@ -16,11 +16,19 @@ public class DownBulletController : MonoBehaviour
     {
         if(transform.position.x > -2){
             
-            transform.Translate(0.1f, 0.1f, 0);
+            transform.Translate(0.1f, 0.05f, 0);
+            Vector3 m_scale = transform.localScale;
+            m_scale.x += -0.023f;
+            m_scale.y += -0.023f;
+            transform.localScale = m_scale;
         }
 
         if(transform.position.x < -2){
-            transform.Translate(0.1f, -0.1768f, 0);
+            transform.Translate(0.1f, -0.0884f, 0);
+            Vector3 m_scale = transform.localScale;
+            m_scale.x -= -0.034f;
+            m_scale.y -= -0.034f;
+            transform.localScale = m_scale;
         }
 
         if (transform.position.x > 10)

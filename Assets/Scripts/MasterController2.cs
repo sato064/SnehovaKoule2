@@ -63,11 +63,15 @@ public class MasterController2 : MonoBehaviour
             if (YpControllerMaster.getYP2() >= 6)
             {
                 kyushu = c_b;
+
             }
             else if (YpControllerMaster.getYP2() >= 4 && c_b == 2)
             {
                 kyushu = c_b;
+
             }
+            flg2 = 1;
+            dimimg2();
 
 
         }
