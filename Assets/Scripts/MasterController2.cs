@@ -44,13 +44,24 @@ public class MasterController2 : MonoBehaviour
     {
         kyushu = 0;
         barrier = 0;
-        if (YpControllerMaster.getYP1() <= 25)
+        aprimg();
+        aprimg2();
+        if (YpControllerMaster.getYP1() <= 23)
         {
             YpControllerMaster.PlusYP1(2);
         }
-        if (YpControllerMaster.getYP2() <= 25)
+        else if (YpControllerMaster.getYP1() == 24)
+        {
+            YpControllerMaster.PlusYP1(1);
+        }
+
+        if (YpControllerMaster.getYP2() <= 23)
         {
             YpControllerMaster.PlusYP2(2);
+        }
+        else if (YpControllerMaster.getYP1() == 24)
+        {
+            YpControllerMaster.PlusYP1(1);
         }
 
         //YPstore.AddYP1(2);
@@ -244,7 +255,7 @@ public class MasterController2 : MonoBehaviour
                 {
 
                     kyushu = 0;
-                    flg1 = 1;
+                    flg2 = 1;
                     audioSource.PlayOneShot(sound1);
                     dimimg2();
 

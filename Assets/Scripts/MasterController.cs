@@ -48,14 +48,24 @@ public class MasterController : MonoBehaviour
     {
         kyushu = 0;
         barrier = 0;
-        if (YpControllerMaster.getYP1() <= 25)
+        aprimg2();
+        aprimg();
+        if (YpControllerMaster.getYP1() <= 23)
         {
             YpControllerMaster.PlusYP1(2);
         }
+        else if (YpControllerMaster.getYP1() == 24)
+        {
+            YpControllerMaster.PlusYP1(1);
+        }
 
-        if (YpControllerMaster.getYP2() <= 25)
+        if (YpControllerMaster.getYP2() <= 23)
         {
             YpControllerMaster.PlusYP2(2);
+        }
+        else if (YpControllerMaster.getYP1() == 24)
+        {
+            YpControllerMaster.PlusYP1(1);
         }
 
         int c_b = Random.Range(1, 4);
@@ -248,8 +258,8 @@ public class MasterController : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.U))
                 {
 
-                    kyushu = 0;
-                    flg1 = 1;
+                    barrier = 0;
+                    flg2 = 1;
                     audioSource.PlayOneShot(sound1);
                     dimimg2();
 
@@ -260,7 +270,7 @@ public class MasterController : MonoBehaviour
 
 
         }
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K) && cpu_ctrl.Getcflg() == 0)
         {
 
             //Debug.Log("Q");
