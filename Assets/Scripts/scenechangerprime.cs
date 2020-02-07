@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class scenechanger : MonoBehaviour
+public class scenechangerprime : MonoBehaviour
 {
     public void ButtonClicked()
     {

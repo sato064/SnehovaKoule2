@@ -13,17 +13,17 @@ public class Hp1TC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        hp1.text = "HP:" + HpControllerMaster.getHP1() + "/20";
-        hp2.text = "HP:" + HpControllerMaster.getHP2()+ "/20";;
-        mp1.text = "YP:" + YpControllerMaster.getYP1()+ "/25";;
-        mp2.text = "YP:" + YpControllerMaster.getYP2()+ "/25";;
+
+        hp1.text = "体力:" + HpControllerMaster.getHP1() + "/20";
+        hp2.text = "体力:" + HpControllerMaster.getHP2() + "/20";
+        mp1.text = "煌力:" + YpControllerMaster.getYP1() + "/25";
+        mp2.text = "煌力:" + YpControllerMaster.getYP2() + "/25";
 
     }
 }

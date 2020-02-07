@@ -26,6 +26,13 @@ public class Player1Controller1 : MonoBehaviour
 
     public GameObject hit;
 
+    public AudioSource big;
+    public AudioSource renia;
+    public AudioSource all;
+
+    public GameObject heff;
+    public AudioSource heal;
+
 
 
     void Start()
@@ -35,6 +42,13 @@ public class Player1Controller1 : MonoBehaviour
         flg = true;
         bar = MasterController2.getBarrier();
         Boll = MasterController2.getKyushu();
+        if (bar == 0)
+        {
+            Instantiate(heff, transform.position, Quaternion.identity);
+            heal.Play();
+
+
+        }
     }
 
     void Update()
@@ -84,9 +98,11 @@ public class Player1Controller1 : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D coll)
     {
+        Instantiate(hit, transform.position, Quaternion.identity);
 
         if (coll.gameObject.tag == "Renia")
         {
+            renia.Play();
             Debug.Log("ATARI");
             HP = HP - 2;
             HpControllerMaster.ChangeHP1(2);
@@ -96,8 +112,9 @@ public class Player1Controller1 : MonoBehaviour
 
         if (coll.gameObject.tag == "Big")
         {
+            big.Play();
             //HP = HP - BulletController1.BIGiryoku;
-            Instantiate(hit, transform.position, Quaternion.identity);
+
             if (bar == 1)
             {
                 HpControllerMaster.ChangeHP1(2);
@@ -121,6 +138,7 @@ public class Player1Controller1 : MonoBehaviour
 
         if (coll.gameObject.tag == "All")
         {
+            all.Play();
             //Debug.Log(PBulletControllerR.iryoku);
             //HP = HP - UpperBulletController.iryoku;
             HpControllerMaster.ChangeHP1(3);

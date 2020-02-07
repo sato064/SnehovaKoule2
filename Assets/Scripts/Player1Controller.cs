@@ -16,6 +16,9 @@ public class Player1Controller : MonoBehaviour
     private int Boll;
     private bool bflag;
     private int i;
+    public GameObject heff;
+    public AudioSource heal;
+
 
 
 
@@ -25,6 +28,15 @@ public class Player1Controller : MonoBehaviour
     {
         Boll = MasterController.getKyushu();
         bflag = true;
+        if (Boll == 0)
+        {
+            Instantiate(heff, transform.position, Quaternion.identity);
+            heal.Play();
+
+
+        }
+
+
     }
 
     void Update()

@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GotoMain: MonoBehaviour
+public class GotoMain : MonoBehaviour
 {
     public void ButtonClicked()
-    {   
-        
+    {
+
+
+
         SceneManager.LoadScene("Init");
-        
+
     }
 }
