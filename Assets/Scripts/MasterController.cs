@@ -13,7 +13,6 @@ public class MasterController : MonoBehaviour
 
     public AudioClip sound1;
     public AudioSource audioSource;
-
     public GameObject img1;
 
     public GameObject img2;

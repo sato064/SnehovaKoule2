@@ -6,19 +6,23 @@ public class bgm : MonoBehaviour
     public bool DontDestroyEnabled = true;
     public AudioSource bgm1;
 
-    private bool p = true;
+    public bool p;
+
+
 
     // Use this for initialization
     void Start()
     {
-        if (p)
+        p = cpu_ctrl.getp();
+
+        if (p == false)
         {
             if (DontDestroyEnabled)
             {
                 bgm1.Play();
-                // Sceneを遷移してもオブジェクトが消えないようにする
                 DontDestroyOnLoad(this);
-                p = false;
+                cpu_ctrl.changep();
+
             }
         }
     }

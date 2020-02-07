@@ -7,6 +7,8 @@ public class cpu_ctrl : MonoBehaviour
 {
     private static int cflg = 0;
 
+    public static bool p = false;
+
     public void TestEvent1()
     {
         if (cflg != 1)
@@ -23,6 +25,14 @@ public class cpu_ctrl : MonoBehaviour
         }
 
 
+    }
+    public static void changep()
+    {
+        p = true;
+    }
+    public static bool getp()
+    {
+        return p;
     }
     public static int Getcflg()
     {
