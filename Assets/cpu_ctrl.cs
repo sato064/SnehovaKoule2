@@ -18,6 +18,10 @@ public class cpu_ctrl : MonoBehaviour
     {
         p = false;
     }
+    public static void truep()
+    {
+        p = true;
+    }
     public static bool getp()
     {
         return p;

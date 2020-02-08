@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class bgm : MonoBehaviour
 {
@@ -31,6 +32,16 @@ public class bgm : MonoBehaviour
             }
 
         }
+    }
+    void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "Init")
+        {
+            cpu_ctrl.truep();
+            this.gameObject.SetActive(false);
+
+        }
+
     }
 
 
